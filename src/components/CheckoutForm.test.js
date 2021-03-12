@@ -21,7 +21,7 @@ test("form shows success message on submit with form details", () => {
     const zip = screen.queryByLabelText(/zip:/i);
     const button = screen.getByRole('button', {name:/checkout/i})
 
-    userEvent.type(firstName, "Courtney");
+    userEvent.type(firstName, "courtney");
     userEvent.type(lastName, "Cooper");
     userEvent.type(address, "13203 e rich ave");
     userEvent.type(city, "spokane");
